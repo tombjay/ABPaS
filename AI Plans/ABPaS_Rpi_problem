@@ -1,0 +1,16 @@
+(define (problem Rpi_problem) (:domain ABPaS_domain)
+    (:objects 
+        l_val r_val u_val s_val bcv st_val t_val buzz_val exh_Val pir_val d_val b_val
+    )
+    (:init
+    (Is_Start s_val)
+(Is_No_HighTemp t_val)
+(Is_No_Pir_Motion pir_val)
+ )
+    (:goal (or 
+    (Emermove_stop bcv)
+    (Parking_Led_Glow pir_val)
+    (All_Good_State bcv)
+    )
+
+    ))
